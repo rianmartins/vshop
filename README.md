@@ -1,2 +1,2 @@
 # vshop
-Projeto Final da Disciplina de Desenvolvimento em Times
+Projeto Final da Disciplina de Desenvolvimento em Times - UFRN
