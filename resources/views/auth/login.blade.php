@@ -1,69 +1,36 @@
-@extends('layouts.app')
+@extends('main')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+@section('title', "Login")
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+@section('conteudo')
 
-                        <div class="form-group row">
-                            <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+	@include('partials._breadcrumbs', ['pagina' => "Entrar"])
 
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+	<!-- login -->
+	<div class="login">
+		<div class="container">
+			<h2>Entrar</h2>
+		
+			<div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
+				<form>
+					<div id="login-options" style="height: 50px;"> 
+						<label class="radio-inline" style="color: chocolate;"><input type="radio" name="optradio">Cliente</label>
+						<label class="radio-inline" style="color: #33cccc;"> <input type="radio" name="optradio">Loja</label>
+						<label class="radio-inline" style="color: #00cc66;"><input type="radio" name="optradio">Root Admin</label>
+					</div>
+					<input type="email" placeholder="Endereço de E-mail" required=" " >
+					<input type="password" placeholder="Senha" required=" " >
+					<div class="forgot">
+						<a href="#">Esqueceu sua senha ?</a>
+					</div>
+					<input type="submit" value="Entrar">
+				</form>
+			</div>
+			<h4>Ainda não é registrado ?</h4>
+			<p><a href="registered.html">Registre-se aqui</a>ou volte para a tela principal <a href="index.html">Principal<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></p>
+		</div>
+	</div>
+<!-- //login -->
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection

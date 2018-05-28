@@ -1,77 +1,50 @@
-@extends('layouts.app')
+@extends('main')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+@section('title', "Registro")
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+@section('conteudo')
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+	@include('partials._breadcrumbs', ['pagina' => "Registro"])
 
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+	<!-- register -->
+	<div class="register">
+		<div class="container">
+			<h2>Registre-se</h2>
+			<div class="login-form-grids">
+				<h5>Informações do perfil</h5>
+				<div id="login-options" style="height: 50px;"> 
+						<label class="radio-inline" style="color: chocolate;"><input type="radio" name="optradio">Cliente</label>
+						<label class="radio-inline" style="color: #33cccc;"> <input type="radio" name="optradio">Loja</label>
+				</div>
+				<form action="#" method="post">
+					<input type="text" placeholder="Nome completo ex: Castiel, Umbrella Corporation..." required=" " >
+					<input type="text" placeholder="Cpf/Cnpj ex: 192.168.162-80..." required=" " >
+					<input type="text" placeholder="Data de Nascimento/Fundação ex: 01/05/1999..." required=" " >
+					<input style="margin-top: 13px;" type="text" placeholder="Número ex: 84996785743..." required=" " >
+				</form>
+				<div class="register-check-box">
+					<div class="check">
+						<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>Quero receber novidades e promoções por email</label>
+					</div>
+				</div>
+				<h6>Informações da Conta</h6>
+					<form action="#" method="post">
+					<input type="email" placeholder="Endereço de E-mail" required=" " >
+					<input type="password" placeholder="Senha" required=" " >
+					<input type="password" placeholder="Confirmar senha" required=" " >
+					<div class="register-check-box">
+						<div class="check">
+							<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>Estou pronto para fazer minhas compras!</label>
+						</div>
+					</div>
+					<input type="submit" value="Concluir">
+					<p style="margin-top: 20px;"><a href="index.html">Voltar para a tela Principal<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></p>
+				</form>
+			</div>
+					
+		</div>
+	</div>
+<!-- //register -->
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class PagesController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+      //  $this->middleware('auth');
     }
 
     /**
@@ -23,6 +23,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('paginas.index');
+    }
+
+
+    /**
+     * Mostra página de contato.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getContato()
+    {
+        return view('paginas.contact');
     }
 }
