@@ -14,25 +14,25 @@
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Informação</h3>
 					<ul class="info"> 
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">Sobre</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contato </a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Sobre</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="{{route('contato')}}">Contato </a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Categorias</h3>
 					<ul class="info"> 
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Groceries</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Household</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Personal Care</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Packaged Foods</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Beverages</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Groceries</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Household</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Personal Care</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Packaged Foods</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Beverages</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Perfil</h3>
 					<ul class="info"> 
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Produtos</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Carrinho</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Produtos</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Carrinho</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="{{route('login')}}">Entrar</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="{{route('register')}}">Criar Conta</a></li>
 					</ul>
