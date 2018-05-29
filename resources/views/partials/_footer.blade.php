@@ -31,10 +31,10 @@
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Perfil</h3>
 					<ul class="info"> 
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Produtos</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Carrinho</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Entrar</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Criar Conta</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="{{route('login')}}">Entrar</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="{{route('register')}}">Criar Conta</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
@@ -44,7 +44,7 @@
 		<div class="footer-copy">
 			
 			<div class="container">
-				<p>© 2018 V-Shop. Trending Systems Integrated | <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2018 V-Shop | <a href="#">Trending Integrated Systems</a></p>
 			</div>
 		</div>
 		
