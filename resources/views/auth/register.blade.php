@@ -13,10 +13,6 @@
 			<h2>Registre-se</h2>
 			<div class="login-form-grids">
 				<h5>Informações do perfil</h5>
-				<div id="login-options" style="height: 50px;"> 
-						<label class="radio-inline" style="color: chocolate;"><input type="radio" name="optradio">Cliente</label>
-						<label class="radio-inline" style="color: #33cccc;"> <input type="radio" name="optradio">Loja</label>
-				</div>
 				<form action="#" method="post">
 					<input type="text" placeholder="Nome completo ex: Castiel, Umbrella Corporation..." required=" " >
 					<input type="text" placeholder="Cpf/Cnpj ex: 192.168.162-80..." required=" " >
@@ -42,7 +38,7 @@
 					<p style="margin-top: 20px;"><a href="index.html">Voltar para a tela Principal<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></p>
 				</form>
 			</div>
-					
+
 		</div>
 	</div>
 <!-- //register -->

@@ -11,14 +11,9 @@
 	<div class="login">
 		<div class="container">
 			<h2>Entrar</h2>
-		
+
 			<div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
 				<form>
-					<div id="login-options" style="height: 50px;"> 
-						<label class="radio-inline" style="color: chocolate;"><input type="radio" name="optradio">Cliente</label>
-						<label class="radio-inline" style="color: #33cccc;"> <input type="radio" name="optradio">Loja</label>
-						<label class="radio-inline" style="color: #00cc66;"><input type="radio" name="optradio">Root Admin</label>
-					</div>
 					<input type="email" placeholder="Endereço de E-mail" required=" " >
 					<input type="password" placeholder="Senha" required=" " >
 					<div class="forgot">
