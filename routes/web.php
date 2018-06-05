@@ -18,6 +18,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-
+Route::get('/ofertas', 'PagesController@getOfertas')->name('ofertas');
+Route::get('/vshop', 'PagesController@getSobreNos')->name('sobre');
 Route::get('/contato', 'PagesController@getContato')->name('contato');
 Route::get('/', 'PagesController@index')->name('home');

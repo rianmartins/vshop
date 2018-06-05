@@ -11,7 +11,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-					</div> 
+					</div>
 					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="{{route('home')}}" class="act">Principal</a></li>
@@ -46,7 +46,7 @@
 									</div>
 								</ul>
 							</li>
-							<li><a href="#">Ofertas</a></li>
+							<li><a href="{{route('ofertas')}}">Ofertas</a></li>
 							<li><a href="{{route('contato')}}">Contato</a></li>
 						</ul>
 					</div>

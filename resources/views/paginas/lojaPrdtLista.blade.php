@@ -11,7 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -19,7 +19,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -31,7 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -39,19 +39,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- start-smoth-scrolling -->
 </head>
-	
+
 <body>
 <!-- header -->
 	<div class="agileits_header">
 		<div class="container">
 			<div class="w3l_offers">
-				<h3><a href="products.html">V-Shop</a></h3>
+				<h3><a href="products.html">VShop</a></h3>
 			</div>
 			<div class="agile-login">
 				<ul>
 					<!--<li><a href="registered.html"> Criar Conta </a></li>-->
 					<li><a href="login.html">Sair</a></li>
-					<li><a href="contact.html">Contato</a></li>	
+					<li><a href="contact.html">Contato</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -63,7 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
 					<!-- <li><i class="fa fa-phone" aria-hidden="true"></i>Order online or call us : (+0123) 234 567</li> -->
-					
+
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left" >
@@ -78,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"></div>
 			</form>
 		</div> -->
-			
+
 			<div class="clearfix"> </div>
 		</div>
 	</div>
@@ -95,25 +95,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-							</div> 
+							</div>
 							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="loja.html" class="act">Principal</a></li>	
+									<li class="active"><a href="loja.html" class="act">Principal</a></li>
 									<!-- Mega Menu -->
 									<li class="dropdown">
-									<li class="active"><a href="lojaPrdtAdd.html" class="act">Adicionar produtos</a></li>	
+									<li class="active"><a href="lojaPrdtAdd.html" class="act">Adicionar produtos</a></li>
 									<!-- Mega Menu -->
 									<li class="dropdown">
-									<li class="active"><a href="lojaPrdtLista.html" class="act">Lista de produtos</a></li>	
+									<li class="active"><a href="lojaPrdtLista.html" class="act">Lista de produtos</a></li>
 									<!-- Mega Menu -->
 									<li class="dropdown">
-									<li class="active"><a href="lojaHistoricoVendas.html" class="act">Histórico de vendas</a></li>	
+									<li class="active"><a href="lojaHistoricoVendas.html" class="act">Histórico de vendas</a></li>
 									<!-- Mega Menu -->
-									<li class="dropdown">	
+									<li class="dropdown">
 							</nav>
 			</div>
 		</div>
-		
+
 <!-- //navigation -->
 <!-- breadcrumbs -->
 	<div class="breadcrumbs">
@@ -177,7 +177,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3_footer_grids">
 				<div class="col-md-3 w3_footer_grid">
 						<h3>Contato</h3>
-						
+
 						<ul class="address">
 							<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
 							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
@@ -186,14 +186,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="col-md-3 w3_footer_grid">
 						<h3>Informação</h3>
-						<ul class="info"> 
+						<ul class="info">
 							<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">Sobre</a></li>
 							<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contato </a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 w3_footer_grid">
 						<h3>Categorias</h3>
-						<ul class="info"> 
+						<ul class="info">
 							<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Groceries</a></li>
 							<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Household</a></li>
 							<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Personal Care</a></li>
@@ -203,7 +203,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="col-md-3 w3_footer_grid">
 						<h3>Perfil</h3>
-						<ul class="info"> 
+						<ul class="info">
 							<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
 							<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Carrinho</a></li>
 							<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Entrar</a></li>
@@ -213,15 +213,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 				</div>
 			</div>
-		
+
 		<div class="footer-copy">
-			
+
             <div class="container">
                <p>© 2018 V-Shop. Trending Systems Integrated | <a href="http://w3layouts.com/">W3layouts</a></p>
             </div>
          </div>
-		
-	</div>	
+
+	</div>
 	<div class="footer-botm">
 			<div class="container">
 				<div class="w3layouts-foot">
@@ -232,13 +232,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
-				<div class="payment-w3ls">	
+				<div class="payment-w3ls">
 					<img src="images/card.png" alt=" " class="img-responsive">
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-<!-- //footer -->	
+<!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <!-- top-header and slider -->
@@ -250,12 +250,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 				};
 			*/
-								
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+
 			});
 	</script>
 <!-- //here ends scrolling icon -->
@@ -276,14 +276,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript">
 		jQuery(document).ready(function(){
 			jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
-						
+
 			jQuery('#responsive').change(function(){
 			  $('#responsive_wrapper').width(jQuery(this).val());
 			});
-			
+
 		});
-</script>	
-<!-- //main slider-banner --> 
+</script>
+<!-- //main slider-banner -->
 
 </body>
 </html>

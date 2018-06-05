@@ -36,4 +36,24 @@ class PagesController extends Controller
     {
         return view('paginas.contact');
     }
+
+    /**
+     * Mostra página sobre nós.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getSobreNos()
+    {
+        return view('paginas.about');
+    }
+
+    /**
+     * Mostra página de ofertas.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getOfertas()
+    {
+        return view('paginas.offers');
+    }
 }
