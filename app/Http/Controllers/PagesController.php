@@ -71,5 +71,43 @@ class PagesController extends Controller
         return view('paginas.loja');
     }
 
+    /**
+     * Mostra página de loja.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getAdminLoja()
+    {
+        return view('paginas.adminLoja');
+    }
 
+    /**
+     * Mostra página de adição de novo produto.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getAdicionarProduto()
+    {
+        return view('paginas.lojaPrdtAdd');
+    }
+
+    /**
+     * Mostra página de adição de novo produto.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getListarProdutos()
+    {
+        return view('paginas.lojaPrdtLista');
+    }
+
+    /**
+     * Mostra página de adição de novo produto.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getHistoricoVendas()
+    {
+        return view('paginas.lojaHistoricoVendas');
+    }
 }

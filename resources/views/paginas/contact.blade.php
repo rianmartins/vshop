@@ -3,7 +3,7 @@
 @section('title', "Contato")
 
 @section('conteudo')
-
+@include('partials._header_busca')
 @include('partials._navigation')
 
 @include('partials._breadcrumbs', ['pagina' => "Contato"])

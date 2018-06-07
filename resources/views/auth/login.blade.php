@@ -3,7 +3,7 @@
 @section('title', "Login")
 
 @section('conteudo')
-
+@include('partials._header_busca')
 
 	@include('partials._breadcrumbs', ['pagina' => "Entrar"])
 
@@ -32,7 +32,7 @@
                             <strong>{{ $errors->first('password') }}</strong>
                         </span>
                     @endif
-					
+
 					<div class="forgot">
 						<a href="#">Esqueceu sua senha ?</a>
 					</div>
@@ -40,7 +40,7 @@
 				</form>
 			</div>
 			<h4>Ainda não é registrado ?</h4>
-			<p><a href="registered.html">Registre-se aqui</a>ou volte para a tela principal <a href="index.html">Principal<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></p>
+			<p><a href="{{route('register')}}">Registre-se aqui</a>ou volte para a tela principal <a href="{{route('home')}}">Principal<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></p>
 		</div>
 	</div>
 <!-- //login -->
