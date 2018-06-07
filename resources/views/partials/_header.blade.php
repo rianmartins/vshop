@@ -7,8 +7,32 @@
 	</div>
 	<div class="agile-login">
 		<ul>
-			<li><a href="{{route('register')}}"> Criar conta </a></li>
-			<li><a href="{{route('login')}}">Entrar</a></li>
+			@guest
+				<li><a href="{{route('register')}}"> Criar conta </a></li>
+				<li><a href="{{route('login')}}">Entrar</a></li>
+			@else
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}<b class="caret"></b></a>
+					<ul class="dropdown-menu multi-column columns-3">
+						<div class="row">
+							<div class="multi-gd-img">
+								<ul class="multi-column-dropdown">
+									<li><a href="{{route('logout')}}"  onclick="event.preventDefault();
+	                                                     document.getElementById('logout-form').submit();">Sair</a></li>
+
+
+									<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+						                @csrf
+						            </form>
+								</ul>
+							</div>
+						</div>
+					</ul>
+				</li>
+
+            @endguest
+
 			<li><a href="{{route('contato')}}">Contato</a></li>
 			<li><a href="{{route('sobre')}}">Sobre nós</a></li>
 		</ul>

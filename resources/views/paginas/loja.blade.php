@@ -49,9 +49,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="agile-login">
 				<ul>
-					<!--<li><a href="registered.html"> Criar Conta </a></li>-->
-					<li><a href="login.html">Sair</a></li>
-					<li><a href="contact.html">Contato</a></li>	
+					
+					@guest
+						<li><a href="{{route('register')}}"> Criar conta </a></li>
+						<li><a href="{{route('login')}}">Entrar</a></li>
+					@else
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}<b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="multi-gd-img">
+										<ul class="multi-column-dropdown">
+											<li><a href="{{route('logout')}}"  onclick="event.preventDefault();
+			                                                     document.getElementById('logout-form').submit();">Sair</a></li>
+
+
+											<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+								                @csrf
+								            </form>
+										</ul>
+									</div>
+								</div>
+							</ul>
+						</li>
+
+			        @endguest
+
+			        <li><a href="contact.html">Contato</a></li>
+
 				</ul>
 			</div>
 			<div class="clearfix"> </div>

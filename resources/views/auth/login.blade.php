@@ -13,9 +13,26 @@
 			<h2>Entrar</h2>
 
 			<div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">
-				<form>
-					<input type="email" placeholder="Endereço de E-mail" required=" " >
-					<input type="password" placeholder="Senha" required=" " >
+				<form method="POST" action="{{ route('login')}}">
+
+					@csrf
+
+					<input type="email" id = "email" name = "email" placeholder="Endereço de E-mail" value="{{ old('email') }}" required=" " >
+
+					 @if ($errors->has('email'))
+                        <span class="alert alert-danger" style="font-size: 10px;">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
+
+					<input id="password" name="password" type="password" placeholder="Senha" required=" " >
+
+					@if ($errors->has('password'))
+                        <span class="alert alert-danger" style="font-size: 10px;">
+                            <strong>{{ $errors->first('password') }}</strong>
+                        </span>
+                    @endif
+					
 					<div class="forgot">
 						<a href="#">Esqueceu sua senha ?</a>
 					</div>

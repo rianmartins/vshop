@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PagesController extends Controller
 {
@@ -23,6 +24,9 @@ class PagesController extends Controller
      */
     public function index()
     {
+        if(Auth::user() != null && Auth::user()->hasRole("empresario"))
+            return $this->getLoja();
+
         return view('paginas.index');
     }
 
@@ -56,4 +60,16 @@ class PagesController extends Controller
     {
         return view('paginas.offers');
     }
+
+    /**
+     * Mostra página de loga.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getLoja()
+    {
+        return view('paginas.loja');
+    }
+
+
 }
