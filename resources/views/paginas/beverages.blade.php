@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Super Market an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Beverages :: w3layouts</title>
+<title>vShop</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -44,13 +44,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="agileits_header">
 		<div class="container">
 			<div class="w3l_offers">
-				<p>SALE UP TO 70% OFF. USE CODE "SALE70%" . <a href="products.html">SHOP NOW</a></p>
+				<p>VENDA ATÉ 70% OFF. CÓDIGO DE USO "SALE70%" . <a href="products.html">Compre Agora</a></p>
 			</div>
 			<div class="agile-login">
 				<ul>
-					<li><a href="registered.html"> Create Account </a></li>
+					<li><a href="registered.html"> Cadastrar </a></li>
 					<li><a href="login.html">Login</a></li>
-					<li><a href="contact.html">Help</a></li>
+					<li><a href="contact.html">Ajuda</a></li>
 					
 				</ul>
 			</div>

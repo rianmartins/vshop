@@ -14,9 +14,9 @@
 			<h3 class="w3_agile_header">Sobre nós</h3>
 			<div class="about-agileinfo w3layouts">
 				<div class="col-md-8 about-wthree-grids grid-top">
-					<h4> Trending Integrated Systems </h4>
-					<p class="top">Gnissimos voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi. atque corrupti quos dolores et quas molestias excepturi sint occaecat officia deserunt mollitia laborum et dolorum fuga</p>
-					<p>Dignissimos at vero eos et accusamus et iusto odio ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecat officia deserunt mollitia laborum et dolorum fuga. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecat atque corrupti quos dolores et quas molestias excepturi sint occaecat officia deserunt mollitia laborum et dolorum </p>
+					<h4> vShop: O Shopping Virtual </h4>
+					<p class="top">Somos o vShop. A sensação de comprar em um shopping, com todas as lojas que você ama em um só lugar, e ainda podendo conhecer novidades.</p>
+					<p>Todas as vantagens de um Shopping, mas agora online. Venha fazer compras conosco.</p>
 					<div class="about-w3agilerow">
 						<div class="col-md-4 about-w3imgs">
 							<img src="images/p3.jpg" alt="" class="img-responsive zoom-img"/>
@@ -110,8 +110,8 @@
 	<div class="about-slid agileits-w3layouts">
 		<div class="container">
 			<div class="about-slid-info">
-				<h2>Lorem Ipsum is that it has a moreless normal</h2>
-				<p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks on the Internet tend as necessary, making this the first true generator on the Internet embarrassing hidden in the middle of text Lorem Ipsum generators on the Internet tend to repeat predefinedchunks as necessary, making this the first true generator on the.</p>
+				<h2>Muito mais do que uma simples loja</h2>
+				<p>O melhor lugar para comprar. Facilidades à distância de um click.</p>
 			</div>
 		</div>
 	</div>
@@ -154,8 +154,8 @@
 				<div class="col-md-3 about-team-grids">
 					<img src="images/t1.jpg" alt=""/>
 					<div class="team-w3lstext">
-						<h4><span>JESSICA,</span> Supervisior</h4>
-						<p>Odio dignissimos vero eos voluptatem accusantium doloremque laudantium reader will be distracted.</p>
+						<h4><span>HIVANA,</span> Supervisora de Design</h4>
+						<p>Hivana gerencia o time de desenvolvimento front-end do vShop</p>
 					</div>
 					<div class="social-icons caption">
 						<ul>
@@ -169,8 +169,8 @@
 				<div class="col-md-3 about-team-grids">
 					<img src="images/t3.jpg" alt=""/>
 					<div class="team-w3lstext">
-						<h4><span>RACKHAM,</span> Staff</h4>
-						<p>Odio dignissimos vero eos voluptatem accusantium doloremque laudantium reader will be distracted.</p>
+						<h4><span>Rian,</span> Staff</h4>
+						<p>Programador Sênior do vShop.</p>
 					</div>
 					<div class="social-icons caption">
 						<ul>
