@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Super Market an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Gourmet :: w3layouts</title>
+<title>vShop</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html">super Market</a></h1>
+				<h1><a href="index.html">vShop</a></h1>
 			</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -705,7 +705,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="footer-copy">
 			
 			<div class="container">
-				<p>© 2017 Super Market. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2018 vShop. Todos os direitos reservados <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
 		</div>
 		

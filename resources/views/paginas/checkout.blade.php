@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html">super Market</a></h1>
+				<h1><a href="index.html"> vShop</a></h1>
 			</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -414,7 +414,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="footer-copy">
 			
 			<div class="container">
-				<p>© 2017 Super Market. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2018 vShop. Todos os direitos reservados. <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
 		</div>
 		
