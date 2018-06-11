@@ -8,6 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:q
 :wq
 
 # Search String History (newest to oldest):
@@ -21,42 +22,52 @@
 # Registers:
 
 # File marks:
-'0  14  7  ~/.gitignore
-'1  2  61  ~/README.md
-'2  5  6  /etc/ssh/sshd_config
+'0  1  0  ~/.gitignore
+'1  5  6  /etc/ssh/sshd_config
+'2  14  7  ~/.gitignore
+'3  2  61  ~/README.md
 
 # Jumplist (newest first):
--'  14  7  ~/.gitignore
 -'  1  0  ~/.gitignore
+-'  5  6  /etc/ssh/sshd_config
+-'  1  0  /etc/ssh/sshd_config
+-'  14  7  ~/.gitignore
+-'  2  61  ~/README.md
+-'  1  0  ~/README.md
+-'  2  61  ~/README.md
+-'  1  0  ~/README.md
+-'  2  61  ~/README.md
+-'  1  0  ~/README.md
 -'  2  61  ~/README.md
 -'  1  0  ~/README.md
 -'  5  6  /etc/ssh/sshd_config
 -'  1  0  /etc/ssh/sshd_config
--'  5  6  /etc/ssh/sshd_config
--'  1  0  /etc/ssh/sshd_config
 -'  2  61  ~/README.md
 -'  1  0  ~/README.md
--'  5  6  /etc/ssh/sshd_config
--'  1  0  /etc/ssh/sshd_config
--'  5  6  /etc/ssh/sshd_config
--'  1  0  /etc/ssh/sshd_config
+-'  2  61  ~/README.md
+-'  1  0  ~/README.md
+-'  2  61  ~/README.md
+-'  1  0  ~/README.md
+-'  2  61  ~/README.md
+-'  1  0  ~/README.md
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	"	14	7
+	"	1	0
 	^	14	8
 	.	14	7
 	+	14	7
+
+> /etc/ssh/sshd_config
+	"	5	6
+	^	5	7
+	.	6	0
+	+	5	7
+	+	6	0
 
 > ~/README.md
 	"	2	61
 	^	2	62
 	.	2	61
 	+	2	61
-
-> /etc/ssh/sshd_config
-	"	5	6
-	^	5	7
-	.	5	6
-	+	5	6
