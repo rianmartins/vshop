@@ -5,7 +5,7 @@
       <div class="brands-agile">
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Lorem</a></p>
+            <p><a href="#">Extra</a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
