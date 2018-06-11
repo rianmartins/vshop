@@ -5,7 +5,7 @@
       <div class="brands-agile">
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Extra</a></p>
+            <p><a href="www.extra.com"><img src="extra_logo">Extra</img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
