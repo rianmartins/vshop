@@ -12,7 +12,7 @@
 */
 /*
 Route::get('/', function () {
-    return view('welcome');
+    return view('list_produto');
 });
 */
 
@@ -22,6 +22,14 @@ Route::get('/adminLoja', 'PagesController@getAdminLoja')->name('adminLoja');
 Route::get('/novoProduto', 'PagesController@getAdicionarProduto')->name('novoProduto');
 Route::get('/listaProdutos', 'PagesController@getListarProdutos')->name('listaProdutos');
 Route::get('/historicoVendas', 'PagesController@getHistoricoVendas')->name('historicoVendas');
+
+
+Route::get('/produtos', 'ControllerProdutos@get_produto');
+Route::get('/listProdutos', 'ControllerProdutos@list_produto');
+Route::post('/novoProdutos', 'ControllerProdutos@add_produto');
+Route::put('/editProdutos', 'ControllerProdutos@edit_produto');
+Route::delete('/delProdutos', 'ControllerProdutos@del_produto');
+
 
 Route::get('/loja', 'PagesController@getLoja')->name('loja');
 Route::get('/ofertas', 'PagesController@getOfertas')->name('ofertas');
