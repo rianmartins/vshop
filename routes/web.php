@@ -18,6 +18,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::resource('contatos', 'ContatoController');
+
+Route::get('/adminRoot', 'PagesController@getAdminRoot')->name('adminRoot');
 Route::get('/adminLoja', 'PagesController@getAdminLoja')->name('adminLoja');
 Route::get('/novoProduto', 'PagesController@getAdicionarProduto')->name('novoProduto');
 Route::get('/listaProdutos', 'PagesController@getListarProdutos')->name('listaProdutos');
@@ -34,6 +37,6 @@ Route::delete('/delProdutos', 'ControllerProdutos@del_produto');
 Route::get('/loja', 'PagesController@getLoja')->name('loja');
 Route::get('/ofertas', 'PagesController@getOfertas')->name('ofertas');
 Route::get('/vshop', 'PagesController@getSobreNos')->name('sobre');
-Route::get('/contato', 'PagesController@getContato')->name('contato');
+//Route::get('/contato', 'PagesController@getContato')->name('contato');
 Route::get('/', 'PagesController@index')->name('home');
 Route::get('/home', 'PagesController@index');

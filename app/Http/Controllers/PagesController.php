@@ -24,8 +24,13 @@ class PagesController extends Controller
      */
     public function index()
     {
-        if(Auth::user() != null && Auth::user()->hasRole("empresario"))
-            return $this->getLoja();
+        if(Auth::user() != null){
+            if(Auth::user()->hasRole("empresario")){
+                return $this->getLoja();
+            }
+            else if (Auth::user()->hasRole("admin"))
+                return $this->getAdminRoot();
+        }
 
         return view('paginas.index');
     }
@@ -72,13 +77,22 @@ class PagesController extends Controller
     }
 
     /**
-     * Mostra página de loja.
+     * Mostra página do admin.
      *
      * @return \Illuminate\Http\Response
      */
     public function getAdminLoja()
     {
         return view('paginas.adminLoja');
+    }
+
+    /**
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getAdminRoot()
+    {
+        return view('paginas.adminRoot');
     }
 
     /**

@@ -2,6 +2,7 @@
 
 <div class="agileits_header">
 <div class="container">
+
 	<div class="w3l_offers">
 		<p><a href="{{route('ofertas')}}">COMPRE AGORA!</a></p>
 	</div>
@@ -33,10 +34,11 @@
 
             @endguest
 
-			<li><a href="{{route('contato')}}">Contato</a></li>
+			<li><a href="{{route('contatos.create')}}">Contato</a></li>
 			<li><a href="{{route('sobre')}}">Sobre nós</a></li>
 		</ul>
 	</div>
+
 	<div class="product_list_header">
 			<form action="#" method="post" class="last">
 				<input type="hidden" name="cmd" value="_cart">
@@ -45,7 +47,9 @@
 			</form>
 	</div>
 	<div class="clearfix"> </div>
-	</div>
+			</div>
 </div>
+
+@include("partials._mensagens")
 
 <!-- //header -->

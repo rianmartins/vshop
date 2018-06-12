@@ -47,7 +47,7 @@
 								</ul>
 							</li>
 							<li><a href="{{route('ofertas')}}">Ofertas</a></li>
-							<li><a href="{{route('contato')}}">Contato</a></li>
+							<li><a href="{{route('contatos.create')}}">Contato</a></li>
 						</ul>
 					</div>
 					</nav>
