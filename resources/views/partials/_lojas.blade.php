@@ -10,28 +10,28 @@
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.magazineluiza.com.br"><img style="height: 100%; width: 100%" src="images/magalu_logo.png">Extra</img></a></p>
+          <p><a href="www.magazineluiza.com.br"><img style="height: 100%; width: 100%" src="images/magalu_logo.png">Magalu</img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.casasbahia.com.br"><img style="height: 100%; width: 100%" src="images/casasbahia_logo.png">Extra</img></a></p>
+          <p><a href="www.casasbahia.com.br"><img style="height: 100%; width: 100%" src="images/casasbahia_logo.png">Casas Bahia</img></a></p>
           </div>
         </div>
 
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.carrefour.com.br"><img style="height: 100%; width: 100%" src="images/carrefour_logo.png">Extra</img></a></p>
+          <p><a href="www.carrefour.com.br"><img style="height: 100%; width: 100%" src="images/carrefour_logo.png">Carrefour</img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.americanas.com.br"><img style="height: 100%; width: 100%" src="images/americanas_logo.png">Extra</img></a></p>
+          <p><a href="www.americanas.com.br"><img style="height: 100%; width: 100%" src="images/americanas_logo.png">Americanas</img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.saraiva.com"><img style="height: 100%; width: 100%" src="images/saraiva_logo.jpg">Extra</img></a></p>
+          <p><a href="www.saraiva.com"><img style="height: 100%; width: 100%" src="images/saraiva_logo.jpg">Saraiva</img></a></p>
           </div>
         </div>
         <div class="clearfix"></div>
@@ -39,33 +39,33 @@
       <div class="brands-agile-1">
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.shoptime.com"><img style="height: 100%; width: 100%" src="images/shoptime_logo.png">Extra</img></a></p>
+          <p><a href="www.shoptime.com"><img style="height: 100%; width: 100%" src="images/shoptime_logo.png">Shoptime</img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.pontofrio.com"><img style="height: 100%; width: 100%" src="images/pontofrio_logo.png">Extra</img></a></p>
+          <p><a href="www.pontofrio.com"><img style="height: 100%; width: 100%" src="images/pontofrio_logo.png">Pontofrio</img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.submarino.com"><img style="height: 100%; width: 100%" src="images/submarino_logo.png">Extra</img></a></p>
+          <p><a href="www.submarino.com"><img style="height: 100%; width: 100%" src="images/submarino_logo.png">Submarino</img></a></p>
           </div>
         </div>
 
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.walmart.com"><img style="height: 100%; width: 100%" src="images/walmart_logo.jpg">Extra</img></a></p>
+          <p><a href="www.walmart.com"><img style="height: 100%; width: 100%" src="images/walmart_logo.jpg">Walmart</img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Lorem</a></p>
+            <p><a href="#">Sua loja!</a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Lorem</a></p>
+            <p><a href="#">Sua loja!</a></p>
           </div>
         </div>
         <div class="clearfix"></div>
@@ -73,33 +73,33 @@
       <div class="brands-agile-2">
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Lorem</a></p>
+            <p><a href="#">Sua loja!</a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Lorem</a></p>
+            <p><a href="#">Sua loja!</a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Lorem</a></p>
+            <p><a href="#">Sua loja!</a></p>
           </div>
         </div>
 
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Lorem</a></p>
+            <p><a href="#">Sua loja!</a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Lorem</a></p>
+            <p><a href="#">Sua loja!</a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="#">Lorem</a></p>
+            <p><a href="#">Sua loja!</a></p>
           </div>
         </div>
         <div class="clearfix"></div>
