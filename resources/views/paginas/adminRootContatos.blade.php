@@ -64,11 +64,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<p>VENDA ATÉ 70% OFF. CÓDIGO DE USO "SALE70%". <a href="products.html">APROVEITE</a></p>
 		</div>
 		<div class="agile-login">
-			<ul>
-				<li><a href="registered.html"> Criar conta </a></li>
-				<li><a href="index.html">Sair</a></li>
-				<li><a href="contact.html">Contato</a></li>	
-			</ul>
+
+			@guest
+						<li><a href="{{route('register')}}"> Criar conta </a></li>
+						<li><a href="{{route('login')}}">Entrar</a></li>
+					@else
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}<b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="multi-gd-img">
+										<ul class="multi-column-dropdown">
+											<li><a href="{{route('logout')}}"  onclick="event.preventDefault();
+			                                                     document.getElementById('logout-form').submit();">Sair</a></li>
+
+
+											<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+								                @csrf
+								            </form>
+										</ul>
+									</div>
+								</div>
+							</ul>
+						</li>
+
+			    @endguest
+
 		</div>
 		<div class="product_list_header">  
 				<form action="#" method="post" class="last"> 
@@ -123,7 +145,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<ul class="nav navbar-nav">
 									<!-- <li class="active"><a href="#prdtAdd" onclick="Mudarestado('prdtAdd')" class="act">Principal</a></li>	 -->
 									<li class="active"><a href="#" onclick="Mudarestado('lojaAdd')" class="act">Adicionar Loja</a></li>	
-									<li class="active"><a href="#" onclick="Mudarestado('lojaList')" class="act">Lista de Lojas</a></li>	
+									<li class="active"><a href="#" onclick="Mudarestado('lojaList')" class="act">Lista de Lojas</a></li>
+									<li class="active"><a href="{{route('contatos.index')}}" onclick="Mudarestado('lojaList')" class="act">Contatos</a></li>	
 							</nav>
 			</div>
 		</div>
@@ -134,108 +157,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
 				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Principal</a></li>
-				<li class="active">Nome da Loja</li>
-				<li class="active">Adicionar Loja</li>
+				<li class="active">Contatos</li>
 			</ol>
 		</div>
 	</div>
 
-<!-- //Adicionar Lojas -->
-<div class="container" id="lojaAdd">
-	<!-- //form para adicionar os itens -->
-	<form style="align-content: center;">
-	  <div class="form-group">
-		 <label for="nome do item"></label>
-		 <input type="text" class="form-control" id="nome" placeholder="Nome da Loja" style="width: 300px;">
-	  </div>
-	  <div class="form-group">
-		<label for="nome do item"></label>
-		<input type="text" class="form-control" id="nome" placeholder="Proprietário/Responsável" style="width: 300px;">
-	 </div>
-	  <div class="form-group">
-		  <label for="nome do item" ></label>
-		  <input type="text" class="form-control" id="categoria" placeholder="Tipo de Loja" style="width: 300px;">
-	  </div>
-	  <div class="form-group">
-		  <label for="nome do item" ></label>
-		  <input type="text" class="form-control" id="code" placeholder="CNPJ" style="width: 250px;">
-		</div>
-	  <div class="form-group">
-		  <label for="nome do item"></label>
-		  <input type="text" class="form-control" id="preco" placeholder="Endereço Comercial" style="width: 250px;">
-		</div>
-	  <div class="form-group">
-		  <label for="nome do item" ></label>
-		  <input type="text" class="form-control" id="quantidade" placeholder="Endereço Virtual" style="width: 250px;">
-	  </div>
-	  <div class="form-group">
-		<label for="nome do item" ></label>
-		<input type="text" class="form-control" id="quantidade" placeholder="E-mail" style="width: 250px;">
-	  </div>
-	  <div class="form-group">
-		<label for="nome do item" ></label>
-		<input type="text" class="form-control" id="quantidade" placeholder="Telefone Comercial" style="width: 250px;">
-	  </div>
-	  <!-- <div class="form-group">
-		 <label for="descricao"></label>
-		 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descrição" style="width: 580px; height: 200px;"></textarea>
-	  </div> -->
-	  <!-- <div class="form-group">
-		  <label for="exampleFormControlFile1">Imagem do produto(150x150 pixels)</label>
-		  <input type="file" class="form-control-file" id="imgProduto" placeholder="imagem do produto">
-		</div> -->
-		<button type="submit" class="btn btn-primary" data-toggle="" data-target="" style="margin-bottom: 20px;">Adicionar</button>
-		<!-- <a class="btn btn-primary" href="#confirm" role="button">Adicionar</a> -->
-	</form>
-	<!-- //form para adicionar os itens -->
-</div>
-</div>
-<!-- //Adicionar Lojas -->
+<br>
+<div class="container">
 
-<!-- //Lista de Lojas -->
-<div class="container" id="lojaList" style="padding-bottom: 20px; display: none;">
-	<!-- //form para adicionar os itens -->
-	<table class="table table-bordered" style="width: 700px;">
-		  <thead class="thead-dark">
-			 <tr class="bg-info" style="color: #eafafa; background: #00cc66;">
-				<th scope="col">id</th>
-				<th scope="col">Nome</th>
-				<th scope="col">Tipo</th>
-				<th scope="col" style="text-align: center; vertical-align: middle;">Editar</th>
-				<th scope="col" style="text-align: center; vertical-align: middle;">Remover</th>
-			 </tr>
-		  </thead>
-		  <tbody>
-			<tr style="background: #66ffb3">
-				<th scope="row">1</th>
-				<td>InfoBit</td>
-				<td>Informática</td>
-				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-info">Editar</button></td>
-				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-warning">Remover</button></td>
-			</tr>
-			
-			<tr style="background: #66ffb3">
-				<th scope="row">2</th>
-				<td>Visual Mega</td>
-				<td>Roupas</td>
-				<td style="text-align: center; vertical-align: middle;" ><button type="button" class="btn btn-info">Editar</button></td>
-				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-warning">Remover</button></td>
-			</tr>
+	@foreach($contatos as $contato)
 
-			<tr style="background: #66ffb3">
-				<th scope="row">3</th>
-				<td>Bolsomito Defense</td>
-				<td>Armas</td>
-				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-info">Editar</button></td>
-				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-warning">Remover</button></td>
-			</tr>
-		  </tbody>
-		  
-		</table>
-	<!-- //form para adicionar os itens -->
-</div>
-</div>
-<!-- //Lista de Lojas -->
+	<div class="panel panel-default">
+  	<!-- Default panel contents -->
+	  <div class="panel-heading">{{$contato->nome}} em {{date('d/m/Y H:i', strtotime($contato->created_at))}}</div>
+	  <div class="panel-body">
+	    <p>{{$contato->mensagem}}</p>
+	  </div>
+	   <div class="panel-footer">{{$contato->email}}</div>
+
+	</div>
+
+	@endforeach
+
+	{{$contatos->links()}}
+
+</div>	
 
 <!-- //footer -->
 <div class="footer">

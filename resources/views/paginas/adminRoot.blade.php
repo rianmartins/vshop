@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>vShop</title>
+<title>Super Market an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Registered :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -38,9 +38,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 // Função para mostrar os menus
 	function Mudarestado(el) {
-	var display = document.getElementById(el).style.display;
-	var id = ["prdtAdd", "prdtList", "prdtHist"];
-	for(i = 0; i < 3; i++) {
+	let display = document.getElementById(el).style.display;
+	let id = ["lojaAdd", "lojaList"];
+	for(i = 0; i < id.length; i++) {
 		if(id[i] != el)
 		{
 			document.getElementById(id[i]).style.display = 'none';
@@ -64,11 +64,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<p>VENDA ATÉ 70% OFF. CÓDIGO DE USO "SALE70%". <a href="products.html">APROVEITE</a></p>
 		</div>
 		<div class="agile-login">
-			<ul>
-				<li><a href="registered.html"> Criar conta </a></li>
-				<li><a href="index.html">Sair</a></li>
-				<li><a href="contact.html">Contato</a></li>	
-			</ul>
+
+			@guest
+						<li><a href="{{route('register')}}"> Criar conta </a></li>
+						<li><a href="{{route('login')}}">Entrar</a></li>
+					@else
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}<b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="multi-gd-img">
+										<ul class="multi-column-dropdown">
+											<li><a href="{{route('logout')}}"  onclick="event.preventDefault();
+			                                                     document.getElementById('logout-form').submit();">Sair</a></li>
+
+
+											<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+								                @csrf
+								            </form>
+										</ul>
+									</div>
+								</div>
+							</ul>
+						</li>
+
+			    @endguest
+
 		</div>
 		<div class="product_list_header">  
 				<form action="#" method="post" class="last"> 
@@ -107,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //header -->
 <!-- navigation -->
-	<div class="navigation-agileits" id="menu1" style="background-color: #33cccc;">
+	<div class="navigation-agileits" id="menu1" style="background-color: #00cc66;">
 		<div class="container">
 			<nav class="navbar navbar-default">
 							<!-- Brand and toggle get grouped for better mobile display -->
@@ -122,9 +144,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 								<ul class="nav navbar-nav">
 									<!-- <li class="active"><a href="#prdtAdd" onclick="Mudarestado('prdtAdd')" class="act">Principal</a></li>	 -->
-									<li class="active"><a href="#" onclick="Mudarestado('prdtAdd')" class="act">Adicionar produtos</a></li>	
-									<li class="active"><a href="#" onclick="Mudarestado('prdtList')" class="act">Lista de produtos</a></li>	
-									<li class="active"><a href="#" onclick="Mudarestado('prdtHist')" class="act">Histórico de vendas</a></li>		
+									<li class="active"><a href="#" onclick="Mudarestado('lojaAdd')" class="act">Adicionar Loja</a></li>	
+									<li class="active"><a href="#" onclick="Mudarestado('lojaList')" class="act">Lista de Lojas</a></li>
+									<li class="active"><a href="{{route('contatos.index')}}" onclick="Mudarestado('lojaList')" class="act">Contatos</a></li>	
 							</nav>
 			</div>
 		</div>
@@ -136,152 +158,107 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
 				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Principal</a></li>
 				<li class="active">Nome da Loja</li>
-				<li class="active">Adicionar Produtos</li>
+				<li class="active">Adicionar Loja</li>
 			</ol>
 		</div>
 	</div>
 
-<!-- //Adicionar Produtos -->
-<div class="container" id="prdtAdd">
+<!-- //Adicionar Lojas -->
+<div class="container" id="lojaAdd">
 	<!-- //form para adicionar os itens -->
 	<form style="align-content: center;">
 	  <div class="form-group">
 		 <label for="nome do item"></label>
-		 <input type="text" class="form-control" id="nome" placeholder="Produto" style="width: 300px;">
+		 <input type="text" class="form-control" id="nome" placeholder="Nome da Loja" style="width: 300px;">
+	  </div>
+	  <div class="form-group">
+		<label for="nome do item"></label>
+		<input type="text" class="form-control" id="nome" placeholder="Proprietário/Responsável" style="width: 300px;">
+	 </div>
+	  <div class="form-group">
+		  <label for="nome do item" ></label>
+		  <input type="text" class="form-control" id="categoria" placeholder="Tipo de Loja" style="width: 300px;">
 	  </div>
 	  <div class="form-group">
 		  <label for="nome do item" ></label>
-		  <input type="text" class="form-control" id="categoria" placeholder="Categoria" style="width: 300px;">
-	  </div>
-	  <div class="form-group">
-		  <label for="nome do item" ></label>
-		  <input type="text" class="form-control" id="code" placeholder="Código" style="width: 250px;">
+		  <input type="text" class="form-control" id="code" placeholder="CNPJ" style="width: 250px;">
 		</div>
 	  <div class="form-group">
-		  <label for="preço"></label>
-		  <input type="number" class="form-control" id="preco" placeholder="Preço" style="width: 170px;">
+		  <label for="nome do item"></label>
+		  <input type="text" class="form-control" id="preco" placeholder="Endereço Comercial" style="width: 250px;">
 		</div>
 	  <div class="form-group">
 		  <label for="nome do item" ></label>
-		  <input type="number" class="form-control" id="quantidade" placeholder="Quantidade" style="width: 170px;">
+		  <input type="text" class="form-control" id="quantidade" placeholder="Endereço Virtual" style="width: 250px;">
 	  </div>
 	  <div class="form-group">
+		<label for="nome do item" ></label>
+		<input type="text" class="form-control" id="quantidade" placeholder="E-mail" style="width: 250px;">
+	  </div>
+	  <div class="form-group">
+		<label for="nome do item" ></label>
+		<input type="text" class="form-control" id="quantidade" placeholder="Telefone Comercial" style="width: 250px;">
+	  </div>
+	  <!-- <div class="form-group">
 		 <label for="descricao"></label>
 		 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descrição" style="width: 580px; height: 200px;"></textarea>
-	  </div>
-	  <div class="form-group">
+	  </div> -->
+	  <!-- <div class="form-group">
 		  <label for="exampleFormControlFile1">Imagem do produto(150x150 pixels)</label>
 		  <input type="file" class="form-control-file" id="imgProduto" placeholder="imagem do produto">
-		</div>
-		<button type="submit" class="btn btn-primary" data-toggle="" data-target="">Adicionar</button>
+		</div> -->
+		<button type="submit" class="btn btn-primary" data-toggle="" data-target="" style="margin-bottom: 20px;">Adicionar</button>
 		<!-- <a class="btn btn-primary" href="#confirm" role="button">Adicionar</a> -->
 	</form>
 	<!-- //form para adicionar os itens -->
 </div>
 </div>
-<!-- //Adicionar Produtos -->
+<!-- //Adicionar Lojas -->
 
-<!-- //Lista de produtos -->
-<div class="container" id="prdtList" style="padding-bottom: 20px; display: none;">
+<!-- //Lista de Lojas -->
+<div class="container" id="lojaList" style="padding-bottom: 20px; display: none;">
 	<!-- //form para adicionar os itens -->
-	<table class="table table-bordered" style="width: 800px;">
+	<table class="table table-bordered" style="width: 700px;">
 		  <thead class="thead-dark">
-			 <tr class="bg-info" style="color: #eafafa; background: #33cccc;">
+			 <tr class="bg-info" style="color: #eafafa; background: #00cc66;">
 				<th scope="col">id</th>
-				<th scope="col">Código</th>
-				<th scope="col">Produto</th>
-				<th scope="col">Preço</th>
-				<th scope="col">Categoria</th>
-				<th scope="col">Quantidade</th>
-				<th scope="col">Editar</th>
-				<th scope="col">Remover</th>
+				<th scope="col">Nome</th>
+				<th scope="col">Tipo</th>
+				<th scope="col" style="text-align: center; vertical-align: middle;">Editar</th>
+				<th scope="col" style="text-align: center; vertical-align: middle;">Remover</th>
 			 </tr>
 		  </thead>
 		  <tbody>
-			<tr style="background: #acecec">
-			<th scope="row">1</th>
-			<td>1904982-6</td>
-			<td>Iphone 9S</td>
-			<td>650$</td>
-			<td>Smartphone</td>
-			<td>52</td>
-			<td><button type="button" class="btn btn-info">Editar</button></td>
-			<td><button type="button" class="btn btn-warning">Remover</button></td>
+			<tr style="background: #66ffb3">
+				<th scope="row">1</th>
+				<td>InfoBit</td>
+				<td>Informática</td>
+				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-info">Editar</button></td>
+				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-warning">Remover</button></td>
 			</tr>
 			
-			<tr style="background: #acecec">
-			<th scope="row">2</th>
-			<td>504982-6</td>
-			<td>Geladeira cce 4b2</td>
-			<td>872$</td>
-			<td>Eletrodoméstico</td>
-			<td>22</td>
-			<td><button type="button" class="btn btn-info">Editar</button></td>
-			<td><button type="button" class="btn btn-warning">Remover</button></td>
+			<tr style="background: #66ffb3">
+				<th scope="row">2</th>
+				<td>Visual Mega</td>
+				<td>Roupas</td>
+				<td style="text-align: center; vertical-align: middle;" ><button type="button" class="btn btn-info">Editar</button></td>
+				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-warning">Remover</button></td>
 			</tr>
 
-			<tr style="background: #acecec">
-			<th scope="row">3</th>
-			<td>295893-6</td>
-			<td>Sofá Lacoste Aspire-x</td>
-			<td>100$</td>
-			<td>Móvel</td>
-			<td>67</td>
-			<td><button type="button" class="btn btn-info">Editar</button></td>
-			<td><button type="button" class="btn btn-warning">Remover</button></td>
+			<tr style="background: #66ffb3">
+				<th scope="row">3</th>
+				<td>Bolsomito Defense</td>
+				<td>Armas</td>
+				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-info">Editar</button></td>
+				<td style="text-align: center; vertical-align: middle;"><button type="button" class="btn btn-warning">Remover</button></td>
 			</tr>
 		  </tbody>
+		  
 		</table>
 	<!-- //form para adicionar os itens -->
 </div>
 </div>
-<!-- //Lista de produtos -->
-
-<!-- //Histórico de Vendas -->
-<div class="container" id="prdtHist" style="padding-bottom: 20px; display: none;">
-		<!-- //form para adicionar os itens -->
-		<table class="table table-bordered" style="width: 800px;">
-			  <thead class="thead-dark">
-				 <tr class="bg-info" style="color: #eafafa; background: #33cccc">
-					<th scope="col">id</th>
-					<th scope="col">Código</th>
-					<th scope="col">Produto</th>
-					<th scope="col">Preço</th>
-					<th scope="col">Categoria</th>
-					<th scope="col">Vendas</th>
-				 </tr>
-			  </thead>
-			  <tbody>
-				 <tr style="background: #acecec">
-					<th scope="row">1</th>
-					<td>1904982-6</td>
-					<td>Iphone 9S</td>
-					<td>650$</td>
-					<td>Smartphone</td>
-					<td>2</td>
-				 </tr>
-				 <tr style="background: #acecec">
-					<th scope="row">2</th>
-					<td>504982-6</td>
-					<td>Geladeira cce 4b2</td>
-					<td>872$</td>
-					<td>Eletrodoméstico</td>
-					<td>12</td>
-				 </tr>
-				 <tr style="background: #acecec">
-					<th scope="row">3</th>
-					<td>295893-6</td>
-					<td>Sofá Lacoste Aspire-x</td>
-					<td>100$</td>
-					<td>Móvel</td>
-					<td>24</td>
-				 </tr>
-			  </tbody>
-			</table>
-		<!-- //form para adicionar os itens -->
-		</div>
-	</div>
-	<!-- //Histórico de Vendas -->
+<!-- //Lista de Lojas -->
 
 <!-- //footer -->
 <div class="footer">

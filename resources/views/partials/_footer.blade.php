@@ -15,7 +15,7 @@
 					<h3>Informação</h3>
 					<ul class="info">
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Sobre</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="{{route('contato')}}">Contato </a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="{{route('contatos.create')}}">Contato </a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
@@ -60,7 +60,7 @@
 					</ul>
 				</div>
 				<div class="payment-w3ls">
-					<img src="images/card.png" alt=" " class="img-responsive">
+					<img src="/images/card.png" alt=" " class="img-responsive">
 				</div>
 				<div class="clearfix"> </div>
 			</div>

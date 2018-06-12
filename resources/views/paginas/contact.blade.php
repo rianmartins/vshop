@@ -36,20 +36,23 @@
 			<div class="col-md-6 w3_agileits_contact_grid_right">
 				<h2 class="w3_agile_header">Deixe uma<span> Mensagem</span></h2>
 
-				<form action="#" method="post">
+				<form action="{{route('contatos.store')}}" method="POST">
+
+					@csrf
+
 					<span class="input input--ichiro">
-						<input class="input__field input__field--ichiro" type="text" id="input-25" name="Name" placeholder=" " required="" />
-						<label class="input__label input__label--ichiro" for="input-25">
+						<input value = "{{ $user != null ? $user->name : ""}}" class="input__field input__field--ichiro" type="text" id="nome" name="nome" placeholder="" required="" />
+						<label class="input__label input__label--ichiro" for="nome">
 							<span class="input__label-content input__label-content--ichiro">Seu Nome</span>
 						</label>
 					</span>
 					<span class="input input--ichiro">
-						<input class="input__field input__field--ichiro" type="email" id="input-26" name="Email" placeholder=" " required="" />
-						<label class="input__label input__label--ichiro" for="input-26">
+						<input value = "{{ $user != null ? $user->email : ""}}" class="input__field input__field--ichiro" type="email" id="email" name="email" placeholder=" " required="" />
+						<label class="input__label input__label--ichiro" for="email">
 							<span class="input__label-content input__label-content--ichiro">Seu Email</span>
 						</label>
 					</span>
-					<textarea name="Message" placeholder="Sua mensagem aqui..." required=""></textarea>
+					<textarea name="mensagem" placeholder="Sua mensagem aqui..." required=""></textarea>
 					<input type="submit" value="Enviar">
 				</form>
 			</div>
