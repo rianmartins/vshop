@@ -15,12 +15,12 @@ class ControllerProdutos extends Controller
         $validate = $request->validate([
           'nome_produto' => 'required',
           'setor_produto' => 'setor_produto',
-          'descrition' => 'descrition'
+          'description' => 'description'
         ]);
         $insert = [  
               "nome_produto" => $request->input('nome_produto'),
               "setor_produto" => $request->input('setor_produto'),
-              "descrition" => $request->input('descrition'),
+              "description" => $request->input('description'),
               "created_at" => "now()",
               "update_at" => "now()"
         ];
@@ -33,12 +33,12 @@ class ControllerProdutos extends Controller
             'id' => 'required',
             'nome_produto' => 'required',
             'setor_produto' => 'setor_produto',
-            'descrition' => 'descrition'
+            'description' => 'description'
           ]);
           $edit = [  
                 "nome_produto" => $request->input('nome_produto'),
                 "setor_produto" => $request->input('setor_produto'),
-                "descrition" => $request->input('descrition'),
+                "description" => $request->input('description'),
                 "update_at" => "now()"
           ];
           DB::table('produtos')->where('id',$request->input(id)
