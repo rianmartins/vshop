@@ -29,9 +29,16 @@ Route::get('/historicoVendas', 'PagesController@getHistoricoVendas')->name('hist
 
 Route::get('/produtos', 'ControllerProdutos@get_produto');
 Route::get('/listProdutos', 'ControllerProdutos@list_produto');
+Route::get('/listProdutosOnly', 'ControllerProdutos@list_only_produto');
 Route::post('/novoProdutos', 'ControllerProdutos@add_produto');
 Route::put('/editProdutos', 'ControllerProdutos@edit_produto');
 Route::delete('/delProdutos', 'ControllerProdutos@del_produto');
+
+Route::get('/Lojas', 'ControllerLojas@get_lojas');
+Route::get('/listLojas', 'ControllerLojas@list_lojas');
+Route::post('/novoLojas', 'ControllerLojas@add_lojas');
+Route::put('/editLojas', 'ControllerLojas@edit_lojas');
+Route::delete('/delLojas', 'ControllerLojas@del_lojas');
 
 
 Route::get('/loja', 'PagesController@getLoja')->name('loja');
