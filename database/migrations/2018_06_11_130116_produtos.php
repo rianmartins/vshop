@@ -17,10 +17,11 @@ class Produtos extends Migration
             $table->increments('id');
             $table->string('nome_produto');
       	    $table->string('setor_produto');
-      	    $table->string('descrition');
+      	    $table->string('description');
+      	    $table->double('valor_unitario');
+      	    $table->integer('id_loja');
             $table->timestamp('created_at')->nullable();
-	          $table->timestamp('update_at')->nullable();
-
+            $table->timestamp('update_at')->nullable();
         });
     }
 
