@@ -5,17 +5,17 @@
       <div class="brands-agile">
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-            <p><a href="www.extra.com.br"><img style="height: 100%; width: 100%" src="images/extra_logo.png">Extra</img></a></p>
+            <p><a href="www.extra.com.br"><img style="height: 100%; width: 100%" src="images/extra_logo.png"></img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.magazineluiza.com.br"><img style="height: 100%; width: 100%; position: relative" src="images/magalu_logo.jpg">Magalu</img></a></p>
+          <p><a href="www.magazineluiza.com.br"><img style="height: 100%; width: 100%; position: relative" src="images/magalu_logo.jpg"></img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.casasbahia.com.br"><img style="height: 100%; width: 100%; position: relative" src="images/casasbahia_logo.png">Casas Bahia</img></a></p>
+          <p><a href="www.casasbahia.com.br"><img style="height: 100%; width: 100%; position: relative" src="images/casasbahia_logo.png"></img></a></p>
           </div>
         </div>
 
