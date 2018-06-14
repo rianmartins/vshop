@@ -21,7 +21,7 @@
 
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l" style="background-color: #fff; height: 232px">
-          <p style=""><a href="www.carrefour.com.br"><img style="height: 100%; width: 100%" src="images/carrefour_logo.png">Carrefour</img></a></p>
+          <p style="position: relative; top: 10%"><a href="www.carrefour.com.br"><img style="height: 100%; width: 100%" src="images/carrefour_logo.png">Carrefour</img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
