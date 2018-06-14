@@ -10,7 +10,7 @@
         </div>
         <div class="col-md-2 w3layouts-brand">
           <div class="brands-w3l">
-          <p><a href="www.magazineluiza.com.br"><img style="height: 100%; width: 100%" src="images/magalu_logo.jpg">Magalu</img></a></p>
+          <p><a href="www.magazineluiza.com.br"><img style="height: 100%; width: 100%; position: relative" src="images/magalu_logo.jpg">Magalu</img></a></p>
           </div>
         </div>
         <div class="col-md-2 w3layouts-brand">
