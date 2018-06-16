@@ -203,10 +203,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <label for="descricao"></label>
 		 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descrição" style="width: 580px; height: 200px;"></textarea>
 	  </div> -->
-	  <!-- <div class="form-group">
-		  <label for="exampleFormControlFile1">Imagem do produto(150x150 pixels)</label>
-		  <input type="file" class="form-control-file" id="imgProduto" placeholder="imagem do produto">
-		</div> -->
+	  <div class="form-group">
+		  <label for="exampleFormControlFile1">Logo da loja(150x150 pixels)</label>
+		  <input type="file" class="form-control-file" id="imgProduto">
+		</div>
 		<button type="submit" class="btn btn-primary" data-toggle="" data-target="" style="margin-bottom: 20px;">Adicionar</button>
 		<!-- <a class="btn btn-primary" href="#confirm" role="button">Adicionar</a> -->
 	</form>
