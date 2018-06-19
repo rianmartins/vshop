@@ -13,7 +13,7 @@ class ControllerProdutos extends Controller
 {
     public function add_produto(Request $request,Response $response)
     {
-
+        
         $validate = $request->validate([
           'nome_produto' => 'required',
           'setor_produto' => 'required',
