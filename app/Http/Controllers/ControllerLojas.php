@@ -13,7 +13,9 @@ class ControllerLojas extends Controller
 {
     public function add_lojas(Request $request,Response $response)
     {
-        $path = $request->file('foto')->store('foto');
+        if ($request->file('photo')->isValid()) {
+            $path = $request->photo->store('photo');
+        }
         $validate = $request->validate([
             'id' => 'required',
             'nome' => 'required',
