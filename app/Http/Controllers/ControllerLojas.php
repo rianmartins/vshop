@@ -7,19 +7,19 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facedes\Storage;
 
 class ControllerLojas extends Controller
 {
     public function add_lojas(Request $request,Response $response)
     {
-        
+        $path = $request->file('foto')->store('foto');
         $validate = $request->validate([
             'id' => 'required',
             'nome' => 'required',
             'nome_responsavel' => 'required',
             'contato_responsavel' => 'required',
-            'ativo' => 'required',
-            'logo_link' => 'required'
+            'ativo' => 'required'
             ]);
             $insert = [  
                 "id" => $request->input('id'),
@@ -27,7 +27,7 @@ class ControllerLojas extends Controller
                 "nome_responsavel" => $request->input('nome_responsavel'),
                 "contato_responsavel" => $request->input('contato_responsavel'),
                 "ativo" => $request->input('ativo'),
-                "logo_link" => $request->input('logo_link'),
+                "logo_link" => $path,
                 "created_at" => "now()",
                 "update_at" => "now()"
             ];
