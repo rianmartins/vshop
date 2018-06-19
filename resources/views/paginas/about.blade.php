@@ -69,7 +69,7 @@
 							<ul class="rslides" id="slider5">
 								<li>
 									<div class="testi-slider">
-										<h4>" I AM VERY PLEASED.</h4>
+										<h4>" ESTOU MUITO SATISFEITO.</h4>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper.</p>
 										<div class="testi-subscript">
 											<p><a href="#">John Doe,</a>Adipiscing</p>
@@ -124,7 +124,7 @@
 				<div class="col-md-3 about-team-grids">
 					<img src="images/t4.jpg" alt=""/>
 					<div class="team-w3lstext">
-						<h4><span>ANDERSON,</span> Manager</h4>
+						<h4><span>ANDERSON,</span> Gerente</h4>
 						<p>Odio dignissimos vero eos voluptatem accusantium doloremque laudantium reader will be distracted.</p>
 					</div>
 					<div class="social-icons caption">
@@ -139,7 +139,7 @@
 				<div class=" col-md-3 about-team-grids">
 					<img src="images/t2.jpg" alt=""/>
 					<div class="team-w3lstext">
-						<h4><span>ELIFS,</span> Director</h4>
+						<h4><span>ELIFS,</span> Diretor</h4>
 						<p>Odio dignissimos vero eos voluptatem accusantium doloremque laudantium reader will be distracted.</p>
 					</div>
 					<div class="social-icons caption">

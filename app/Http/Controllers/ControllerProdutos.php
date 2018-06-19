@@ -13,7 +13,9 @@ class ControllerProdutos extends Controller
 {
     public function add_produto(Request $request,Response $response)
     {
-
+         if ($request->file('photo')->isValid()) {
+            $path = $request->photo->store('photo');
+        }
         $validate = $request->validate([
           'nome_produto' => 'required',
           'setor_produto' => 'required',
@@ -27,6 +29,7 @@ class ControllerProdutos extends Controller
               "description" => $request->input('description'),
               "valor_unitario" => $request->input('valor_unitario'),
               "id_loja" => $request->input('id_loja'),
+              "foto_link" => $path,
               "created_at" => "now()",
               "update_at" => "now()"
         ];

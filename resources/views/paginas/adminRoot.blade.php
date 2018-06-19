@@ -107,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 	<div class="w3ls_logo_products_left1">
 			<ul class="phone_email">
-				<li><i class="fa fa-phone" aria-hidden="true"></i>Order online or call us : (+0123) 234 567</li>
+				<li><i class="fa fa-phone" aria-hidden="true"></i>Encomende online ou ligue-nos : (+0123) 234 567</li>
 				
 			</ul>
 		</div>
@@ -169,35 +169,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<form style="align-content: center;">
 	  <div class="form-group">
 		 <label for="nome do item"></label>
-		 <input type="text" class="form-control" id="nome" placeholder="Nome da Loja" style="width: 300px;">
+		 <input type="text" class="form-control" id="nome_loja" name="nome_loja" placeholder="Nome da Loja" style="width: 300px;">
 	  </div>
 	  <div class="form-group">
 		<label for="nome do item"></label>
-		<input type="text" class="form-control" id="nome" placeholder="Proprietário/Responsável" style="width: 300px;">
+		<input type="text" class="form-control" id="nome_responsavel" name="nome_responsavel" placeholder="Proprietário/Responsável" style="width: 300px;">
 	 </div>
 	  <div class="form-group">
 		  <label for="nome do item" ></label>
-		  <input type="text" class="form-control" id="categoria" placeholder="Tipo de Loja" style="width: 300px;">
+		  <input type="text" class="form-control" id="categoria_loja" name="categoria_loja" placeholder="Tipo de Loja" style="width: 300px;">
 	  </div>
 	  <div class="form-group">
 		  <label for="nome do item" ></label>
-		  <input type="text" class="form-control" id="code" placeholder="CNPJ" style="width: 250px;">
+		  <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="CNPJ" style="width: 250px;">
 		</div>
 	  <div class="form-group">
 		  <label for="nome do item"></label>
-		  <input type="text" class="form-control" id="preco" placeholder="Endereço Comercial" style="width: 250px;">
+		  <input type="text" class="form-control" id="endereco_comercial" name="endereco_comercial" placeholder="Endereço Comercial" style="width: 250px;">
 		</div>
 	  <div class="form-group">
 		  <label for="nome do item" ></label>
-		  <input type="text" class="form-control" id="quantidade" placeholder="Endereço Virtual" style="width: 250px;">
+		  <input type="text" class="form-control" id="website" name="website" placeholder="Website" style="width: 250px;">
 	  </div>
 	  <div class="form-group">
 		<label for="nome do item" ></label>
-		<input type="text" class="form-control" id="quantidade" placeholder="E-mail" style="width: 250px;">
+		<input type="text" class="form-control" id="email" name="email" placeholder="E-mail" style="width: 250px;">
 	  </div>
 	  <div class="form-group">
 		<label for="nome do item" ></label>
-		<input type="text" class="form-control" id="quantidade" placeholder="Telefone Comercial" style="width: 250px;">
+		<input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone Comercial" style="width: 250px;">
 	  </div>
 	  <!-- <div class="form-group">
 		 <label for="descricao"></label>
@@ -205,7 +205,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  </div> -->
 	  <div class="form-group">
 		  <label for="exampleFormControlFile1">Logo da loja(150x150 pixels)</label>
-		  <input type="file" class="form-control-file" id="imgProduto">
+		  <input type="file" class="form-control-file" name="imgProduto" id="imgProduto">
 		</div>
 		<button type="submit" class="btn btn-primary" data-toggle="" data-target="" style="margin-bottom: 20px;">Adicionar</button>
 		<!-- <a class="btn btn-primary" href="#confirm" role="button">Adicionar</a> -->
@@ -283,11 +283,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                <div class="col-md-3 w3_footer_grid">
                   <h3>Categorias</h3>
                   <ul class="info"> 
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Groceries</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Household</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Personal Care</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Packaged Foods</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Beverages</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Mantimentos</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Casa</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Cuidado pessoal</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Alimentos embalados</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Bebidas</a></li>
                   </ul>
                </div>
                <div class="col-md-3 w3_footer_grid">
