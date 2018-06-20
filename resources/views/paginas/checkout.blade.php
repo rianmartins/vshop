@@ -115,12 +115,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<div class="multi-gd-img">
 													<ul class="multi-column-dropdown">
 														<h6>All Groceries</h6>
-														<li><a href="groceries.html">Dals & Pulses</a></li>
-														<li><a href="groceries.html">Almonds</a></li>
-														<li><a href="groceries.html">Cashews</a></li>
-														<li><a href="groceries.html">Dry Fruit</a></li>
+														<li><a href="groceries.html">Grãos</a></li>
+														<li><a href="groceries.html">Amêndoas</a></li>
+														<li><a href="groceries.html">Castanha de caju</a></li>
+														<li><a href="groceries.html">Fruta seca</a></li>
 														<li><a href="groceries.html"> Mukhwas </a></li>
-														<li><a href="groceries.html">Rice & Rice Products</a></li>
+														<li><a href="groceries.html">Arroz e Produtos de Arroz</a></li>
 													</ul>
 												</div>	
 												
@@ -134,12 +134,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<div class="multi-gd-img">
 													<ul class="multi-column-dropdown">
 														<h6>All Household</h6>
-														<li><a href="household.html">Cookware</a></li>
-														<li><a href="household.html">Dust Pans</a></li>
-														<li><a href="household.html">Scrubbers</a></li>
-														<li><a href="household.html">Dust Cloth</a></li>
-														<li><a href="household.html"> Mops </a></li>
-														<li><a href="household.html">Kitchenware</a></li>
+														<li><a href="household.html">Utensílios de cozinha</a></li>
+														<li><a href="household.html">Pás</a></li>
+														<li><a href="household.html">Purificadores</a></li>
+														<li><a href="household.html">Pano de poeira</a></li>
+														<li><a href="household.html"> Esfregão </a></li>
+														<li><a href="household.html">Itens de cozinha</a></li>
 													</ul>
 												</div>
 												
@@ -154,12 +154,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<div class="multi-gd-img">
 													<ul class="multi-column-dropdown">
 														<h6>Baby Care</h6>
-														<li><a href="personalcare.html">Baby Soap</a></li>
-														<li><a href="personalcare.html">Baby Care Accessories</a></li>
-														<li><a href="personalcare.html">Baby Oil & Shampoos</a></li>
-														<li><a href="personalcare.html">Baby Creams & Lotion</a></li>
-														<li><a href="personalcare.html"> Baby Powder</a></li>
-														<li><a href="personalcare.html">Diapers & Wipes</a></li>
+														<li><a href="personalcare.html">Sabonete para Bebé</a></li>
+														<li><a href="personalcare.html">Acessórios de cuidados com o bebê</a></li>
+														<li><a href="personalcare.html">Óleo para bebês e shampoos</a></li>
+														<li><a href="personalcare.html">Cremes e loções para bebês</a></li>
+														<li><a href="personalcare.html"> Talco</a></li>
+														<li><a href="personalcare.html">Fraldas e toalhetes</a></li>
 													</ul>
 												</div>
 												
@@ -173,12 +173,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<div class="multi-gd-img">
 													<ul class="multi-column-dropdown">
 														<h6>All Accessories</h6>
-														<li><a href="packagedfoods.html">Baby Food</a></li>
-														<li><a href="packagedfoods.html">Dessert Items</a></li>
-														<li><a href="packagedfoods.html">Biscuits</a></li>
-														<li><a href="packagedfoods.html">Breakfast Cereals</a></li>
-														<li><a href="packagedfoods.html"> Canned Food </a></li>
-														<li><a href="packagedfoods.html">Chocolates & Sweets</a></li>
+														<li><a href="packagedfoods.html">Comida de bêbe</a></li>
+														<li><a href="packagedfoods.html">Itens de Sobremesa</a></li>
+														<li><a href="packagedfoods.html">Biscoitos</a></li>
+														<li><a href="packagedfoods.html">Cereais do café da manhã</a></li>
+														<li><a href="packagedfoods.html"> Comida enlatada </a></li>
+														<li><a href="packagedfoods.html">Chocolates e Doces</a></li>
 													</ul>
 												</div>
 												
@@ -193,12 +193,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<div class="multi-gd-img">
 													<ul class="multi-column-dropdown">
 														<h6>Tea & Coeffe</h6>
-														<li><a href="beverages.html">Green Tea</a></li>
-														<li><a href="beverages.html">Ground Coffee</a></li>
-														<li><a href="beverages.html">Herbal Tea</a></li>
-														<li><a href="beverages.html">Instant Coffee</a></li>
-														<li><a href="beverages.html"> Tea </a></li>
-														<li><a href="beverages.html">Tea Bags</a></li>
+														<li><a href="beverages.html">Chá verde</a></li>
+														<li><a href="beverages.html">Café moído</a></li>
+														<li><a href="beverages.html">Chá de ervas/a></li>
+														<li><a href="beverages.html">Café instantâneo</a></li>
+														<li><a href="beverages.html"> Chá </a></li>
+														<li><a href="beverages.html">Saquinhos de chá</a></li>
 													</ul>
 												</div>
 							
@@ -379,30 +379,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Information</h3>
 					<ul class="info"> 
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">About Us</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact Us</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">Sobre nós</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contate-Nos</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Códigos Curtos</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">FAQ's</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Special Products</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Produtos especiais</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Category</h3>
 					<ul class="info"> 
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Groceries</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Household</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Personal Care</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Packaged Foods</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Beverages</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Mantimentos</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Casa</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Cuidado pessoal</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Alimentos embalados</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Bebidas</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Profile</h3>
 					<ul class="info"> 
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">My Cart</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Meu carrinho</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Login</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Create Account</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Criar Conta</a></li>
 					</ul>
 					
 					
