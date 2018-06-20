@@ -214,18 +214,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                <div class="col-md-3 w3_footer_grid">
                   <h3>Categorias</h3>
                   <ul class="info"> 
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Groceries</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Household</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Personal Care</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Packaged Foods</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Beverages</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Mantimentos</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Casa</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Cuidado pessoal</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Alimentos embalados</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="beverages.html">Bebidas</a></li>
                   </ul>
                </div>
                <div class="col-md-3 w3_footer_grid">
                   <h3>Perfil</h3>
                   <ul class="info"> 
                      <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Carrinho</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Meu Carrinho</a></li>
                      <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Entrar</a></li>
                      <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Criar Conta</a></li>
                   </ul>
