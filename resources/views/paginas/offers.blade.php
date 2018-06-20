@@ -21,7 +21,7 @@
 						<div role="tabpanel" class="tab-pane fade in active" id="expeditions" aria-labelledby="expeditions-tab">
 							<div class="agile-tp">
 								<h5>Descontos arrasadores</h5>
-								<p class="w3l-ad">We've pulled together all our advertised offers into one place, so you won't miss out on a great deal.</p>
+								<p class="w3l-ad">Reunimos todas as nossas ofertas anunciadas em um só lugar, para que você não perca.</p>
 							</div>
 							<div class="agile_top_brands_grids">
 								<div class="col-md-4 top_brand_left">
@@ -294,7 +294,7 @@
 						<div role="tabpanel" class="tab-pane fade" id="tours" aria-labelledby="tours-tab">
 							<div class="agile-tp">
 								<h5>Aproveite! É por tempo limitado</h5>
-								<p class="w3l-ad">We've pulled together all our advertised offers into one place, so you won't miss out on a great deal.</p>
+								<p class="w3l-ad">Reunimos todas as nossas ofertas anunciadas em um só lugar, para que você não perca.</p>
 							</div>
 							<div class="agile_top_brands_grids">
 								<div class="col-md-4 top_brand_left">
