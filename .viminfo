@@ -22,33 +22,40 @@
 
 # Registers:
 ""1	LINE	0
-	}
+	>>>>>>> cef4afa1039e82c9467bab70ddcf80b81415ef88
 "2	LINE	0
-	    }
+	
 "3	LINE	0
-	        Schema::dropIfExists('produtos');
+	=======
 "4	LINE	0
-	    {
+	        </div>
 "5	LINE	0
-	    public function down()
+	          </div>
 "6	LINE	0
-	     */
+	            <p><a href="#">Sua loja!</a></p>
 "7	LINE	0
-	     * @return void
+	          <div class="brands-w3l">
 "8	LINE	0
-	     *
+	        <div class="col-md-2 w3layouts-brand">
 "9	LINE	0
-	     * Reverse the migrations.
+	        </div>
 
 # File marks:
-'0  7  24  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
-'1  38  0  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
-'2  1  0  ~/.gitignore
-'3  5  6  /etc/ssh/sshd_config
-'4  14  7  ~/.gitignore
-'5  2  61  ~/README.md
+'0  8  0  ~/resources/views/partials/_lojas.blade.php
+'1  1  0  ~/.env
+'2  1  0  ~/config/database.php
+'3  7  24  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
+'4  38  0  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
+'5  1  0  ~/.gitignore
+'6  5  6  /etc/ssh/sshd_config
+'7  14  7  ~/.gitignore
+'8  2  61  ~/README.md
 
 # Jumplist (newest first):
+-'  8  0  ~/resources/views/partials/_lojas.blade.php
+-'  1  0  ~/resources/views/partials/_lojas.blade.php
+-'  1  0  ~/.env
+-'  1  0  ~/config/database.php
 -'  7  24  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
 -'  1  0  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
 -'  38  0  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
@@ -140,8 +147,24 @@
 -'  1  0  ~/README.md
 -'  2  61  ~/README.md
 -'  1  0  ~/README.md
+-'  7  24  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
+-'  1  0  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
+-'  38  0  ~/database/migrations/2018_06_13_225605_create_produtos_table.php
+-'  1  0  ~/.gitignore
 
 # History of marks within files (newest to oldest):
+
+> ~/resources/views/partials/_lojas.blade.php
+	"	8	0
+	.	7	0
+	+	5	0
+	+	7	0
+
+> ~/.env
+	"	1	0
+
+> ~/config/database.php
+	"	1	0
 
 > ~/database/migrations/2018_06_13_225605_create_produtos_table.php
 	"	7	24

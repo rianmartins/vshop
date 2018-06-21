@@ -3,7 +3,6 @@
     <div class="container">
     <h3>Conheça nossas lojas!</h3>
 
-
         @foreach($lojas as $index => $loja)
 
           @if($index == 0)
