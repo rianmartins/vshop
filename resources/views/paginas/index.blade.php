@@ -39,5 +39,5 @@
 			</li>
 		</ul>
 	<!-- //main-slider -->
-	@include('partials._lojas')
+	@include('partials._lojas', ['lojas' => $lojas])
 @endsection
