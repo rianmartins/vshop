@@ -23,8 +23,6 @@
 
                 </div>
                 <div class="panel-footer">Valor Total: $ {{money_format('%(#10n', $compra->total)}}
-                    <br><br>
-                    <button class="btn btn-primary"> Aprovar </button>
                 </div>
 
 
