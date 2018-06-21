@@ -19,6 +19,8 @@ Route::get('/', function () {
 Auth::routes();
 
 
+Route::get('/lojaPrdtLista', 'PagesController@getlista_produtos')->name('lojaPrdtLista');
+
 Route::post('/leilao', 'PagesController@postLeilao')->name('leilao');
 Route::get('/leiloes', 'PagesController@getLeiloes')->name('leiloes');
 Route::get('/compras', 'PagesController@getCompras')->name('compras');
@@ -44,7 +46,6 @@ Route::get('/listLojas', 'ControllerLojas@list_lojas');
 Route::post('/novoLojas', 'ControllerLojas@add_lojas');
 Route::put('/editLojas', 'ControllerLojas@edit_lojas');
 Route::delete('/delLojas', 'ControllerLojas@del_lojas');
-
 
 Route::get('/loja', 'PagesController@getLoja')->name('loja');
 Route::get('/ofertas', 'PagesController@getOfertas')->name('ofertas');

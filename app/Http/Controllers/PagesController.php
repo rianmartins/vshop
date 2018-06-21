@@ -172,7 +172,35 @@ class PagesController extends Controller
      */
     public function getAdminLoja()
     {
-        return view('paginas.adminLoja');
+
+        $produtos = Produto::all();
+
+        return view('paginas.adminLoja')->withProdutos($produtos);
+    }
+
+
+    /**
+     * Mostra página do admin da loja -> Lista de produtos.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getlista_produtos()
+    {
+        $produtos = Produto::all();
+
+        return view('paginas.lojaPrdtLista')->withProdutos($produtos);
+    }
+
+    /**
+     * Mostra página do admin da loja -> Lista de produtos.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function get_historico_compras()
+    {
+        $produtos = Produto::all();
+
+        return view('paginas.lojaPrdtLista')->withProdutos($produtos);
     }
 
     /**
@@ -211,6 +239,9 @@ class PagesController extends Controller
      */
     public function getHistoricoVendas()
     {
-        return view('paginas.lojaHistoricoVendas');
+
+        $compras = Compra::orderBy('created_at', 'desc')->whereNotNull('updated_at')->paginate(5);
+
+        return view('paginas.lojaHistoricoVendas')->withCompras($compras);
     }
 }

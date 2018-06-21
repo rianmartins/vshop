@@ -61,13 +61,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="agileits_header">
 	<div class="container">
 		<div class="w3l_offers">
-			<p>VENDA ATÉ 70% OFF. CÓDIGO DE USO "SALE70%". <a href="products.html">APROVEITE</a></p>
+			<p>VENDA ATÉ 70% OFF. CÓDIGO DE USO "SALE70%". <a href="{{route('ofertas')}}">APROVEITE</a></p>
 		</div>
 		<div class="agile-login">
 			<ul>
-				<li><a href="registered.html"> Criar conta </a></li>
+				<li><a href="{{route('register')}}"> Criar conta </a></li>
 				<li><a href="index.html">Sair</a></li>
-				<li><a href="contact.html">Contato</a></li>	
+				<li><a href="{{route('contatos.create')}}">Contato</a></li>
 			</ul>
 		</div>
 		<div class="product_list_header">  
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul>
 		</div>
 		<div class="w3ls_logo_products_left">
-			<h1 id="vLogo"><a href="index.html">V-Shop</a></h1>
+			<h1 id="vLogo"><a href="{{route('home')}}">V-Shop</a></h1>
 		</div>
 	<div class="w3l_search">
 		<form action="#" method="post">
@@ -124,8 +124,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<!-- <li class="active"><a href="#prdtAdd" onclick="Mudarestado('prdtAdd')" class="act">Principal</a></li>	 -->
 									<li class="active"><a href="#" onclick="Mudarestado('prdtAdd')" class="act">Adicionar produtos</a></li>	
 									<li class="active"><a href="#" onclick="Mudarestado('prdtList')" class="act">Lista de produtos</a></li>	
-									<li class="active"><a href="#" onclick="Mudarestado('prdtHist')" class="act">Histórico de vendas</a></li>		
-							</nav>
+									<li class="active"><a href="#" onclick="Mudarestado('prdtHist')" class="act">Histórico de vendas</a></li>
+								</ul>
+							</div>
+			</nav>
 			</div>
 		</div>
 		
