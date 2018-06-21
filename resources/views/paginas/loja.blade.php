@@ -133,7 +133,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li class="active"><a href="lojaPrdtLista.html" class="act">Lista de produtos</a></li>	
 									<!-- Mega Menu -->
 									<li class="dropdown">
-									<li class="active"><a href="lojaHistoricoVendas.html" class="act">Histórico de vendas</a></li>	
+									<li class="active"><a href="lojaHistoricoVendas.html" class="act">Histórico de vendas</a></li>
+									<li class="active"><a href="{{route('compras')}}" class="act">Compras</a></li>	
+									<li class="active"><a href="{{route('leiloes')}}" class="act">Leilões</a></li>	
 									<!-- Mega Menu -->
 									<li class="dropdown">	
 							</nav>

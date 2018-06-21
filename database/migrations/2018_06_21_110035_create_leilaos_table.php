@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLojasTable extends Migration
+class CreateLeilaosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateLojasTable extends Migration
      */
     public function up()
     {
-        Schema::create('lojas', function (Blueprint $table) {
+        Schema::create('leiloes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nome');
-            $table->string('nome_responsavel');
-            $table->string('contato_responsavel');
-            $table->boolean('ativo');
-            $table->string('logo_link');
+            $table->integer('protocolo');
+            $table->integer('id_produto');
+            $table->integer('id_user');
+            $table->double('lance');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateLojasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lojas');
+        Schema::dropIfExists('leiloes');
     }
 }
