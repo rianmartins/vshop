@@ -306,7 +306,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="footer-copy">
 			
             <div class="container">
-               <p>© 2018 V-Shop. Trending Systems Integrated | <a href="http://w3layouts.com/">W3layouts</a></p>
+               <p>© 2018 V-Shop | <a href="#">Trending Systems Integrated</a></p>
             </div>
          </div>
 		

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Produto;
 use App\Compra;
 use App\Leilao;
+use App\Loja;
 use Session;
 
 class PagesController extends Controller
@@ -36,7 +37,9 @@ class PagesController extends Controller
                 return $this->getAdminRoot();
         }
 
-        return view('paginas.index');
+        $lojas = Loja::all();
+
+        return view('paginas.index')->withLojas($lojas);
     }
 
 
