@@ -36,36 +36,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
-// Função para mostrar os menus
-	function Mudarestado(el) {
-	let display = document.getElementById(el).style.display;
-	let id = ["lojaAdd", "lojaList"];
-	for(i = 0; i < id.length; i++) {
-		if(id[i] != el)
-		{
-			document.getElementById(id[i]).style.display = 'none';
-		}
-	}
-	if(display == "none")
-		document.getElementById(el).style.display = 'block';
-	else
-		document.getElementById(el).style.display = 'none';
-	}
-	
 </script>
 <!-- start-smoth-scrolling -->
 </head>
 	
 <body>
 <!-- header -->
-<div class="agileits_header">
-	<div class="container">
-		<div class="w3l_offers">
-			<p>VENDA ATÉ 70% OFF. CÓDIGO DE USO "SALE70%". <a href="products.html">APROVEITE</a></p>
-		</div>
-		<div class="agile-login">
-
-			@guest
+	<div class="agileits_header">
+		<div class="container">
+			<div class="w3l_offers">
+				<h3><a href="products.html">V-Shop</a></h3>
+			</div>
+			<div class="agile-login">
+				<ul>
+					
+					@guest
 						<li><a href="{{route('register')}}"> Criar conta </a></li>
 						<li><a href="{{route('login')}}">Entrar</a></li>
 					@else
@@ -89,47 +74,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
 						</li>
 
-			    @endguest
+			        @endguest
 
-		</div>
-		<div class="product_list_header">  
-				<form action="#" method="post" class="last"> 
-					<input type="hidden" name="cmd" value="_cart">
-					<input type="hidden" name="display" value="1">
-					<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-				</form>  
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-</div>
+			        <li><a href="contact.html">Contato</a></li>
 
-<div class="logo_products">
-	<div class="container">
-	<div class="w3ls_logo_products_left1">
-			<ul class="phone_email">
-				<li><i class="fa fa-phone" aria-hidden="true"></i>Encomende online ou ligue-nos : (+0123) 234 567</li>
-				
-			</ul>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
 		</div>
-		<div class="w3ls_logo_products_left">
-			<h1 id="vLogo"><a href="index.html">V-Shop</a></h1>
+	</div>
+
+	<div class="logo_products">
+		<div class="container">
+		<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<!-- <li><i class="fa fa-phone" aria-hidden="true"></i>Order online or call us : (+0123) 234 567</li> -->
+					
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left" >
+				<h1><a href="index.html" style="color: #33cccc;">Nome da Loja</a></h1>
+			</div>
+		<!-- <div class="w3l_search">
+			<form action="#" method="post">
+				<input type="search" name="Search" placeholder="Procure por um produto..." required="">
+				<button type="submit" class="btn btn-default search" aria-label="Left Align">
+					<i class="fa fa-search" aria-hidden="true"> </i>
+				</button>
+				<div class="clearfix"></div>
+			</form>
+		</div> -->
+			
+			<div class="clearfix"> </div>
 		</div>
-	<div class="w3l_search">
-		<form action="#" method="post">
-			<input type="search" name="Search" placeholder="Procure por um produto..." required="">
-			<button type="submit" class="btn btn-default search" aria-label="Left Align">
-				<i class="fa fa-search" aria-hidden="true"> </i>
-			</button>
-			<div class="clearfix"></div>
-		</form>
 	</div>
-		
-		<div class="clearfix"> </div>
-	</div>
-</div>
 <!-- //header -->
 <!-- navigation -->
-	<div class="navigation-agileits" id="menu1" style="background-color: #00cc66;">
+	<div class="navigation-agileits" style="background-color: #33cccc;">
 		<div class="container">
 			<nav class="navbar navbar-default">
 							<!-- Brand and toggle get grouped for better mobile display -->
@@ -143,45 +124,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div> 
 							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 								<ul class="nav navbar-nav">
-									<!-- <li class="active"><a href="#prdtAdd" onclick="Mudarestado('prdtAdd')" class="act">Principal</a></li>	 -->
-									<li class="active"><a href="#" onclick="Mudarestado('lojaAdd')" class="act">Adicionar Loja</a></li>	
-									<li class="active"><a href="#" onclick="Mudarestado('lojaList')" class="act">Lista de Lojas</a></li>
-									<li class="active"><a href="{{route('contatos.index')}}" onclick="Mudarestado('lojaList')" class="act">Contatos</a></li>	
+									<li class="active"><a href="loja.html" class="act">Principal</a></li>	
+									<!-- Mega Menu -->
+									<li class="dropdown">
+									<li class="active"><a href="lojaPrdtAdd.html" class="act">Adicionar produtos</a></li>	
+									<!-- Mega Menu -->
+									<li class="dropdown">
+									<li class="active"><a href="lojaPrdtLista.html" class="act">Lista de produtos</a></li>	
+									<!-- Mega Menu -->
+									<li class="dropdown">
+									<li class="active"><a href="lojaHistoricoVendas.html" class="act">Histórico de vendas</a></li>	
+									<li class="active"><a href="{{route('compras')}}" class="act">Compras</a></li>	
+									<li class="active"><a href="{{route('leiloes')}}" class="act">Leilões</a></li>	
+									<!-- Mega Menu -->
+									<!-- Mega Menu -->
+									<li class="dropdown">	
 							</nav>
 			</div>
 		</div>
-		
-<!-- //navigation -->
-<!-- breadcrumbs -->
-	<div class="breadcrumbs" id="brd-1">
 		<div class="container">
-			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Principal</a></li>
-				<li class="active">Contatos</li>
-			</ol>
+
+			<br>
+
+	@foreach($compras as $compra)
+
+		<div class="panel panel-danger">
+	  	<!-- Default panel contents -->
+		  <div class="panel-heading">{{$compra->protocolo." | ".$compra->cliente}} em {{date('d/m/Y H:i', strtotime($compra->created_at))}}</div>
+		  <div class="panel-body">
+
+		  	@php
+		  		$descricoes = explode(";", $compra->descricao);
+		  	@endphp
+
+		  	@foreach($descricoes as $descricao)
+		    	<p>{{$descricao}}</p>
+		  	@endforeach
+
+		  </div>
+		   <div class="panel-footer">Valor Total: $ {{money_format('%(#10n', $compra->total)}}
+		   	<br><br>
+		   	<button class="btn btn-primary"> Aprovar </button>
+		   </div> 
+
+
 		</div>
-	</div>
 
-<br>
-<div class="container">
+		@endforeach
 
-	@foreach($contatos as $contato)
+		{{$compras->links()}}
 
-	<div class="panel panel-default">
-  	<!-- Default panel contents -->
-	  <div class="panel-heading">{{$contato->nome}} em {{date('d/m/Y H:i', strtotime($contato->created_at))}}</div>
-	  <div class="panel-body">
-	    <p>{{$contato->mensagem}}</p>
-	  </div>
-	   <div class="panel-footer">{{$contato->email}}</div>
+	</div>	
 
-	</div>
 
-	@endforeach
-
-	{{$contatos->links()}}
-
-</div>	
 
 <!-- //footer -->
 <div class="footer">
@@ -217,8 +212,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   <h3>Perfil</h3>
                   <ul class="info"> 
                      <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Carrinho</a></li>
-                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Sair</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Meu Carrinho</a></li>
+                     <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Entrar</a></li>
                      <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Criar Conta</a></li>
                   </ul>
                </div>

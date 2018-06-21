@@ -18,6 +18,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
+Route::post('/leilao', 'PagesController@postLeilao')->name('leilao');
+Route::get('/leiloes', 'PagesController@getLeiloes')->name('leiloes');
+Route::get('/compras', 'PagesController@getCompras')->name('compras');
+Route::post('/comprar', 'PagesController@postComprar')->name('comprar');
 Route::resource('contatos', 'ContatoController');
 
 Route::get('/adminRoot', 'PagesController@getAdminRoot')->name('adminRoot');
