@@ -50,9 +50,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="agile-login">
 				<ul>
 					<li><a href="registered.html"> Cadastrar </a></li>
-					<li><a href="login.html">Login</a></li>
-					<li><a href="contact.html">Ajuda</a></li>
-					
+					<li><a href="login.html">Entrar</a></li>
+					<li><a href="contact.html">Contato</a></li>
+					<li><a href="About.html">Sobre</a></li>
 				</ul>
 			</div>
 			<div class="product_list_header">  
@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html"> vShop</a></h1>
+				<h1><a href="index.html">V-Shop</a></h1>
 			</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -106,15 +106,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div> 
 							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="index.html" class="act">Home</a></li>	
+									<li class="active"><a href="index.html" class="act">Principal</a></li>	
 									<!-- Mega Menu -->
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Groceries<b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mantimentos<b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="multi-gd-img">
 													<ul class="multi-column-dropdown">
-														<h6>All Groceries</h6>
+														<h6>Todos os Mantimentos</h6>
 														<li><a href="groceries.html">Grãos</a></li>
 														<li><a href="groceries.html">Amêndoas</a></li>
 														<li><a href="groceries.html">Castanha de caju</a></li>
@@ -128,12 +128,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Household<b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Para o Lar<b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="multi-gd-img">
 													<ul class="multi-column-dropdown">
-														<h6>All Household</h6>
+														<h6>Utilitários</h6>
 														<li><a href="household.html">Utensílios de cozinha</a></li>
 														<li><a href="household.html">Pás</a></li>
 														<li><a href="household.html">Purificadores</a></li>
@@ -148,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personal Care<b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cuidado Pessoais<b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="multi-gd-img">
@@ -167,12 +167,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Packaged Foods<b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Alimentos Embalados<b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="multi-gd-img">
 													<ul class="multi-column-dropdown">
-														<h6>All Accessories</h6>
+														<h6>Acessórios</h6>
 														<li><a href="packagedfoods.html">Comida de bêbe</a></li>
 														<li><a href="packagedfoods.html">Itens de Sobremesa</a></li>
 														<li><a href="packagedfoods.html">Biscoitos</a></li>
@@ -187,12 +187,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Bebidas<b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="multi-gd-img">
 													<ul class="multi-column-dropdown">
-														<h6>Tea & Coeffe</h6>
+														<h6>Chá & Café</h6>
 														<li><a href="beverages.html">Chá verde</a></li>
 														<li><a href="beverages.html">Café moído</a></li>
 														<li><a href="beverages.html">Chá de ervas/a></li>
@@ -206,8 +206,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</ul>
 									</li>
 									<li><a href="gourmet.html">Gourmet</a></li>
-									<li><a href="offers.html">Offers</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="offers.html">Ofertas</a></li>
+									<li><a href="contact.html">Contato</a></li>
 								</ul>
 							</div>
 							</nav>
@@ -219,8 +219,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="breadcrumbs">
 		<div class="container">
 			<ol class="breadcrumb breadcrumb1">
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-				<li class="active">Checkout Page</li>
+				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Principal</a></li>
+				<li class="active">Finalizar Compra</li>
 			</ol>
 		</div>
 	</div>
@@ -228,18 +228,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- checkout -->
 	<div class="checkout">
 		<div class="container">
-			<h2>Your shopping cart contains: <span>3 Products</span></h2>
+			<h2>Seu carrinho contém: <span>3 Produtos</span></h2>
 			<div class="checkout-right">
 				<table class="timetable_sub">
 					<thead>
 						<tr>
-							<th>SL No.</th>	
-							<th>Product</th>
-							<th>Quality</th>
-							<th>Product Name</th>
+							<th>Código</th>	
+							<th>Imagem</th>
+							<th>Quantidade</th>
+							<th>Produto</th>
 						
-							<th>Price</th>
-							<th>Remove</th>
+							<th>Preço</th>
+							<th>Remover</th>
 						</tr>
 					</thead>
 					<tr class="rem1">
@@ -254,7 +254,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</td>
-						<td class="invert">Tata Salt</td>
+						<td class="invert">Sal Boa Vida</td>
 						
 						<td class="invert">$290.00</td>
 						<td class="invert">
@@ -283,7 +283,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</td>
-						<td class="invert">Fortune oil</td>
+						<td class="invert">Óleo de girassol Maria</td>
 					
 						<td class="invert">$250.00</td>
 						<td class="invert">
@@ -312,7 +312,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</td>
-						<td class="invert">Aashirvaad atta</td>
+						<td class="invert">Açucar Diabetes</td>
 						
 						<td class="invert">$15.00</td>
 						<td class="invert">
@@ -346,17 +346,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="checkout-left">	
 				<div class="checkout-left-basket">
-					<h4>Continue to basket</h4>
+					<h4>Finalizar Compra</h4>
 					<ul>
-						<li>Product1 <i>-</i> <span>$15.00 </span></li>
-						<li>Product2 <i>-</i> <span>$25.00 </span></li>
-						<li>Product3 <i>-</i> <span>$29.00 </span></li>
-						<li>Total Service Charges <i>-</i> <span>$15.00</span></li>
+						<li>Produto 1 <i>-</i> <span>$15.00 </span></li>
+						<li>Produto 2<i>-</i> <span>$25.00 </span></li>
+						<li>Produto 3<i>-</i> <span>$29.00 </span></li>
+						<!-- <li>Preço Total <i>-</i> <span>$15.00</span></li> -->
 						<li>Total <i>-</i> <span>$84.00</span></li>
 					</ul>
 				</div>
 				<div class="checkout-right-basket">
-					<a href="single.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue Shopping</a>
+					<a href="single.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue Comprando</a>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -368,7 +368,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="w3_footer_grids">
 				<div class="col-md-3 w3_footer_grid">
-					<h3>Contact</h3>
+					<h3>Contato</h3>
 					
 					<ul class="address">
 						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
@@ -381,7 +381,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="info"> 
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">Sobre nós</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contate-Nos</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Códigos Curtos</a></li>
+						<!-- <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Códigos Curtos</a></li> -->
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">FAQ's</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Produtos especiais</a></li>
 					</ul>
@@ -401,7 +401,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="info"> 
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Meu carrinho</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Login</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Entrar</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Criar Conta</a></li>
 					</ul>
 					
