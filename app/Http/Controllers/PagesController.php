@@ -110,6 +110,19 @@ class PagesController extends Controller
         return redirect('/');
     }
 
+    public function postAprovar(Request $request){
+
+        $compra = Compra::find($request->id_compra);
+
+        $compra->aprovada = true;
+
+        $compra->save();
+
+        Session::flash('sucesso', "Pedido aprovado!");
+
+        return redirect('/compras');
+    }
+
     public function postLeilao(Request $request){
 
         $produto = Produto::find($request->id_produto);
@@ -150,7 +163,7 @@ class PagesController extends Controller
 
     public function getCompras(){
 
-        $compras = Compra::orderBy('created_at', 'desc')->paginate(5);
+        $compras = Compra::where('aprovada', '=', '0')->orderBy('created_at', 'desc')->paginate(5);
 
         return view('paginas.loja_compras')->withCompras($compras);
     }
@@ -240,7 +253,7 @@ class PagesController extends Controller
     public function getHistoricoVendas()
     {
 
-        $compras = Compra::orderBy('created_at', 'desc')->whereNotNull('updated_at')->paginate(5);
+        $compras = Compra::where('aprovada', '=', '1')->orderBy('created_at', 'desc')->whereNotNull('updated_at')->paginate(5);
 
         return view('paginas.lojaHistoricoVendas')->withCompras($compras);
     }

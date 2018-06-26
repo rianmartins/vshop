@@ -18,9 +18,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-
 Route::get('/lojaPrdtLista', 'PagesController@getlista_produtos')->name('lojaPrdtLista');
 
+Route::post('/aprovar', 'PagesController@postAprovar')->name('aprovar');
 Route::post('/leilao', 'PagesController@postLeilao')->name('leilao');
 Route::get('/leiloes', 'PagesController@getLeiloes')->name('leiloes');
 Route::get('/compras', 'PagesController@getCompras')->name('compras');

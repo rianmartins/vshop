@@ -19,6 +19,7 @@ class CreateComprasTable extends Migration
             $table->integer('protocolo');
             $table->text('descricao');
             $table->double('total');
+            $table->boolean('aprovada')->default('0');
             $table->timestamps();
         });
     }

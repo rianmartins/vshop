@@ -25,7 +25,15 @@
 		  </div>
 		   <div class="panel-footer">Valor Total: $ {{money_format('%(#10n', $compra->total)}}
 		   	<br><br>
-		   	<button class="btn btn-primary"> Aprovar </button>
+
+		   	<form action="{{route('aprovar')}}" method="POST">
+
+		   		@csrf
+
+		   		<input type="hidden" id="id_compra" name="id_compra" value="{{$compra->id}}">
+
+			   	<button class="btn btn-primary"> Aprovar </button>
+		   	</form>
 		   </div> 
 
 
