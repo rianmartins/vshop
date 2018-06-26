@@ -168,6 +168,12 @@ class PagesController extends Controller
         return view('paginas.loja_compras')->withCompras($compras);
     }
 
+
+    public function getCheckout(){
+
+        return view('paginas.checkout');
+    }
+
     /**
      * Mostra página de loga.
      *

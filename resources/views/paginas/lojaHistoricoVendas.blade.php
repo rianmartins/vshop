@@ -8,7 +8,7 @@
 		 <!-- //form para adicionar os itens -->
         @foreach($compras as $compra)
 
-            <div class="panel panel-danger">
+            <div class="panel panel">
                 <!-- Default panel contents -->
                 <div class="panel-heading">{{$compra->protocolo." | ".$compra->cliente}} em {{date('d/m/Y H:i', strtotime($compra->created_at))}}</div>
                 <div class="panel-body">

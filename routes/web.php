@@ -20,6 +20,7 @@ Auth::routes();
 
 Route::get('/lojaPrdtLista', 'PagesController@getlista_produtos')->name('lojaPrdtLista');
 
+Route::get('/checkout', 'PagesController@getCheckout')->name('checkout');
 Route::post('/aprovar', 'PagesController@postAprovar')->name('aprovar');
 Route::post('/leilao', 'PagesController@postLeilao')->name('leilao');
 Route::get('/leiloes', 'PagesController@getLeiloes')->name('leiloes');
